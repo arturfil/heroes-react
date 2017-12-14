@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Hero from '../Heroes/Hero/Hero';
-import './App.css'
+import classes from './App.css'
 
 class App extends Component {
 
@@ -62,28 +62,28 @@ class App extends Component {
 
   render () {
     return (
-      <div className="App">
+      <div className={classes.App}>
         <h1>Heroes fighting</h1>
         <button onClick={this.fightEventHandler}>Attack</button>
         
-        <div className="HeroDiv">
+        <div className={classes.HeroDiv}>
 
          
-          <div className="HeroCard">
+          <div className={classes.HeroCard}>
             <Hero
               name={this.state.heroes[0].name}
               superpowers={this.state.heroes[0].superpower}
               img={this.state.heroes[0].img}
               life={this.state.heroes[0].life} />
           </div>
-          <div className="HeroCard">
+          <div className={classes.HeroCard}>
             <Hero
               name={this.state.heroes[1].name}
               superpowers={this.state.heroes[1].superpower}
               img={this.state.heroes[1].img}
               life={this.state.heroes[1].life} />
           </div>
-          <div className="HeroCard">
+          <div className={classes.HeroCard}>
             <Hero
               name={this.state.heroes[2].name}
               superpowers={this.state.heroes[2].superpower}
