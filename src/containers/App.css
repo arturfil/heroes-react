@@ -3,10 +3,19 @@
 }
 
 .HeroDiv {
-  border: #ccc solid 1px;
-  width: 200px;
+  display: flex;
+  margin: 20px;
   justify-content: center;
-  margin: 10px auto 0 auto;
+}
+
+.HeroCard {
+  border: #ccc solid 1px;
+  margin: 20px;
+  width: 200px;
+}
+
+button:hover {
+  background-color: red;
 }
 
 img {
